@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event counter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">Event counter</h2>
+       <form id="form">
+            <input type="text" id="event_name" placeholder="Event name">
+            <input type="date" id="event_date" >
+            <button id="count_btn">Count</button>
+       </form>
+    </div>
+
+    <div id="timer__wrapper">
+        <div class="timer">
+            <h2 id="timer__event_name">name</h2>
+            <div class="timer__inner">
+                <div class="timer_block">
+                    <span id="days">00</span>
+                    days
+                </div>
+                <div class="timer_block">
+                    <span id="hours">00</span>
+                    hours
+                </div>
+                <div class="timer_block">
+                    <span id="minutes">00</span>
+                    minutes
+                </div>
+                <div class="timer_block">
+                    <span id="seconds">00</span>
+                    seconds
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="congrate">
+        <div class="congrate__wrapper">
+            <h1 class="congrate__text">Congratulation</h1>
+        </div>
+        
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

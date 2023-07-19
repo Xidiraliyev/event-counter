@@ -1,0 +1,149 @@
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    
+}
+
+
+.container {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#form {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(122, 218, 122);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+#title {
+    font-size: 35px;
+}
+input {
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    width: 90%;
+    padding: 8px;
+}
+
+#count_btn {
+    font-size: 20px;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+    width: 100px;
+}
+
+#timer__wrapper{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    border-radius: 10px;
+}
+.timer {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(122, 218, 122);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    
+}
+
+.timer__inner{
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.timer_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 22px;
+    width: 80px;
+    height: 100px;
+}
+
+.timer_block span {
+    margin: 10px;
+}
+
+.congrate{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.congrate__wrapper{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(122, 218, 122);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 25px;
+
+}
