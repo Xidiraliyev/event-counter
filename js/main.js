@@ -5,7 +5,7 @@ const count_btn = document.querySelector("#count_btn");
 const timer_wrapper = document.querySelector("#timer__wrapper");
 const container = document.querySelector(".container");
 const timer__event_name = document.querySelector("#timer__event_name");
-const congrate = document.querySelector('.congrate')
+const congrate = document.querySelector(".congrate");
 let deadline = "2023-07-20";
 
 let arr = [
@@ -17,14 +17,20 @@ let arr = [
 ];
 
 if (localStorage.getItem("countdown")) {
-  arr = JSON.parse(localStorage.getItem('countdown'));
+  arr = JSON.parse(localStorage.getItem("countdown"));
   deadline = arr[0].event_date;
   timer__event_name.innerHTML = arr[0].event_name;
-  setClock("timer", deadline);
-  container.style.visibility = "hidden";
-  timer_wrapper.style.visibility = "visible";
-}else {
-  setCountevent()
+  if (deadline == "") {
+    container.style.visibility = "hidden";
+    timer_wrapper.style.visibility = "hidden";
+    congrate.style.visibility = "visible";
+  } else {
+    setClock("timer", deadline);
+    container.style.visibility = "hidden";
+    timer_wrapper.style.visibility = "visible";
+  }
+} else {
+  setCountevent();
 }
 // set localStorage
 function setCountevent() {
@@ -78,9 +84,9 @@ function setClock(selector, endtime) {
 
     if (t.timer <= 0) {
       clearInterval(timeInterval);
-      container.style.visibility = 'hidden'
-      timer_wrapper.style.visibility = 'hidden'
-      congrate.style.visibility = 'visible'
+      container.style.visibility = "hidden";
+      timer_wrapper.style.visibility = "hidden";
+      congrate.style.visibility = "visible";
     }
   }
   console.log("done");
